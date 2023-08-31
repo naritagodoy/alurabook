@@ -1,0 +1,109 @@
+.carrossel__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--laranja);
+    text-align: center;
+    padding: 1em 0 1em 0;
+    background-color: var(--branco);
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.botões {
+    display: flex;
+}
+.descrição__titulo {
+    font-weight: 700;
+    color: var(--laranja);
+}
+.card {
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: .5em;
+    border-radius: 10px;
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    line-height: normal;
+}
+.descrição__titulo-livro {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    margin: 0.5em 0;
+}
+.descrição__texto {
+    font-size: 14px;
+}
+.botões__item {
+    margin: 0 0.5em;
+}
+.botões__ancora {
+    padding: 1em 2.2em;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+        margin: 1em 0 1em;
+    }
+    .swiper-pagination {
+        margin: 2em 0 3em;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+
+    }
+    .card {
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+    }
+    @media screen and (min-width:1728px) {
+        .carrossel__container {
+            display: flex;
+            margin: 0 10vw 3em 10vw;
+            align-items: center;
+            gap: 3em;
+        }
+        .swiper {
+            width: 50%;        
+        }
+        .swiper-pagination {
+            margin: 1em 0 1em 0;
+        }
+        .descrição__titulo {
+            font-size: 32px;
+        }
+        .descrição__texto {
+            font-size: 16px;
+        }
+        .card__descrição {
+            width: 100%;
+        }
+    }
